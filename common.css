@@ -1,0 +1,27 @@
+/* 单行文本溢出 */
+.row-ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/* 多行文本溢出 */
+.rows-ellipsis {
+  display: -webkit-box!important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical; /*方向*/
+  -webkit-line-clamp: 2; /*显示多少行文本*/
+}
+div {
+  box-sizing: border-box;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+}
